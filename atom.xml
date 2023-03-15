@@ -6,7 +6,7 @@
   <link href="http://xunruo.github.io/atom.xml" rel="self"/>
   
   <link href="http://xunruo.github.io/"/>
-  <updated>2023-03-15T08:29:53.184Z</updated>
+  <updated>2023-03-15T09:44:11.041Z</updated>
   <id>http://xunruo.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Go入门日记-字符串</title>
+    <link href="http://xunruo.github.io/2023/03/15/Go4/"/>
+    <id>http://xunruo.github.io/2023/03/15/Go4/</id>
+    <published>2023-03-15T08:43:16.000Z</published>
+    <updated>2023-03-15T09:44:11.041Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、字符&quot;&gt;&lt;a href=&quot;#一、字符&quot; class=&quot;headerlink&quot; title=&quot;一、字符&quot;&gt;&lt;/a&gt;一、字符&lt;/h3&gt;&lt;figure class=&quot;highlight go&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Golang" scheme="http://xunruo.github.io/tags/Golang/"/>
+    
+  </entry>
   
   <entry>
     <title>Go入门日记-流程控制</title>
@@ -82,29 +105,6 @@
     
     
     <category term="Golang" scheme="http://xunruo.github.io/tags/Golang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://xunruo.github.io/2023/03/14/test/"/>
-    <id>http://xunruo.github.io/2023/03/14/test/</id>
-    <published>2023-03-14T13:32:12.000Z</published>
-    <updated>2023-03-14T13:33:38.286Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h5 id=&quot;这是在测试一下&quot;&gt;&lt;a href=&quot;#这是在测试一下&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="测试" scheme="http://xunruo.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   

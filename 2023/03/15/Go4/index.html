@@ -11,7 +11,7 @@
   
   <title>
     
-      test 
+      Go入门日记-字符串 
       
       
       |
@@ -158,19 +158,19 @@
   <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
   <div class="container post-details" id="post-details">
     <div class="post-content">
-      <div class="post-title">test</div>
+      <div class="post-title">Go入门日记-字符串</div>
       <div class="post-attach">
         <span class="post-pubtime">
           <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
-          2023-03-14 21:32:12
+          2023-03-15 16:43:16
         </span>
         
               <span class="post-tags">
                 <i class="iconfont icon-tags mr-10" title="标签"></i>
                 
                 <span class="span--tag mr-8">
-                  <a href="/tags/%E6%B5%8B%E8%AF%95/" title="测试">
-                    #测试
+                  <a href="/tags/Golang/" title="Golang">
+                    #Golang
                   </a>
                 </span>
                 
@@ -178,25 +178,54 @@
           
       </div>
       <div class="markdown-body">
-        <h5 id="这是在测试一下"><a href="#这是在测试一下" class="headerlink" title="这是在测试一下"></a>这是在测试一下</h5>
+        <h3 id="一、字符"><a href="#一、字符" class="headerlink" title="一、字符"></a>一、字符</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//在golang中没有专门的字符类型变量</span></span><br><span class="line"><span class="keyword">var</span> c1 <span class="type">byte</span> = <span class="string">&#x27;a&#x27;</span></span><br><span class="line">fmt.Println(<span class="string">&quot;c1=&quot;</span>, c1)</span><br><span class="line"><span class="comment">//字符对应码大于255的字符可以使用int来保存</span></span><br><span class="line"><span class="keyword">var</span> c2 <span class="type">int</span> = <span class="string">&#x27;成&#x27;</span></span><br><span class="line">fmt.Printf(<span class="string">&quot;c2=%c\n&quot;</span>, c2)</span><br></pre></td></tr></table></figure>
+
+<h3 id="二、字符串"><a href="#二、字符串" class="headerlink" title="二、字符串"></a>二、字符串</h3><p><strong>Tips</strong>：Go与传统的字符串不同，Go字符串是一串固定长度的字符连接起来的字符序列，字符串在内容初始化后不能被<strong>修改</strong>，都是采用UTF-8字符集编码。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str1 <span class="type">string</span></span><br><span class="line">str1 = <span class="string">&quot;hello&quot;</span></span><br><span class="line">str2 := <span class="string">&quot;beijing&quot;</span></span><br><span class="line"><span class="comment">//字符串不可直接改变</span></span><br><span class="line"><span class="comment">//str1[0]=&#x27;c&#x27;会报错</span></span><br><span class="line">fmt.Printf(<span class="string">&quot;%c\n&quot;</span>, str1[<span class="number">1</span>])</span><br><span class="line"><span class="comment">//输出 e</span></span><br><span class="line">fmt.Println(<span class="built_in">len</span>(str2))</span><br><span class="line"><span class="comment">//输出 7</span></span><br><span class="line">fmt.Println(str1 + str2)</span><br><span class="line"><span class="comment">//输出 hellobeijing</span></span><br></pre></td></tr></table></figure>
+
+<p>修改字符串的间接方式：</p>
+<p>1、通过两次转换来修改字符串</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">str := <span class="string">&quot;successful&quot;</span></span><br><span class="line"><span class="comment">//转换成byte数组类型</span></span><br><span class="line">strTemp := []<span class="type">byte</span>(str)</span><br><span class="line">fmt.Println(<span class="string">&quot;strTemp=&quot;</span>, strTemp)</span><br><span class="line"><span class="comment">//输出</span></span><br><span class="line"><span class="comment">//strTemp= [115 117 99 99 101 115 115 102 117 108]</span></span><br><span class="line"><span class="comment">//修改数组的的值</span></span><br><span class="line">strTemp[<span class="number">0</span>] = <span class="string">&#x27;c&#x27;</span></span><br><span class="line"><span class="comment">//将数组转换成字符串</span></span><br><span class="line">strResult := <span class="type">string</span>(strTemp)</span><br><span class="line">fmt.Println(<span class="string">&quot;strResult=&quot;</span>, strResult)</span><br></pre></td></tr></table></figure>
+
+<p>2、使用切片来完成</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">str3 := <span class="string">&quot;liu&quot;</span></span><br><span class="line">str3 = <span class="string">&quot;c&quot;</span> + str3[<span class="number">1</span>:]</span><br><span class="line">fmt.Println(str3)</span><br><span class="line"><span class="comment">//输出：ciu</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="三、字符串操作"><a href="#三、字符串操作" class="headerlink" title="三、字符串操作"></a>三、字符串操作</h3><h4 id="3-1-len-、string-函数"><a href="#3-1-len-、string-函数" class="headerlink" title="3.1 len()、string()函数"></a>3.1 len()、string()函数</h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">str4 := <span class="string">&quot;hello&quot;</span></span><br><span class="line">str5 := <span class="string">&quot;北京&quot;</span></span><br><span class="line"><span class="comment">//在go语言中中文以utf-8格式保存，每个中文占据三个字节</span></span><br><span class="line">fmt.Println(<span class="built_in">len</span>(str4))</span><br><span class="line"><span class="comment">//输出 5</span></span><br><span class="line">fmt.Println(<span class="built_in">len</span>(str5))</span><br><span class="line"><span class="comment">//输出 6</span></span><br><span class="line"><span class="comment">//使用特定函数可以输出真正的字符串长度</span></span><br><span class="line">fmt.Println(utf8.RuneCountInString(str5))</span><br><span class="line"><span class="comment">//输出 2</span></span><br></pre></td></tr></table></figure>
+
+<p>使用len()遍历字符串</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">str := <span class="string">&quot;你好&quot;</span></span><br><span class="line"><span class="keyword">for</span> i,ch := <span class="keyword">range</span> str &#123;</span><br><span class="line">	fmt.Println(i,ch)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//输出</span></span><br><span class="line"><span class="number">0</span> <span class="number">20320</span></span><br><span class="line"><span class="number">3</span> <span class="number">22909</span></span><br></pre></td></tr></table></figure>
+
+<p>string()函数</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">num := <span class="number">108</span></span><br><span class="line">fmt.Printf(<span class="string">&quot;%T \n&quot;</span>, <span class="type">string</span>(num))</span><br><span class="line"><span class="comment">//输出 string</span></span><br><span class="line">fmt.Printf(<span class="string">&quot;%s \n&quot;</span>, <span class="type">string</span>(num))</span><br><span class="line"><span class="comment">//输出 l</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3-2-字符串连接"><a href="#3-2-字符串连接" class="headerlink" title="3.2 字符串连接"></a>3.2 字符串连接</h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">&quot;hello&quot;</span></span><br><span class="line">str2 := <span class="string">&quot;beijing&quot;</span></span><br><span class="line">fmt.Println(str1 + str2)</span><br><span class="line"><span class="comment">//用+号来连接字符串不高效</span></span><br><span class="line"><span class="comment">//我们使用StringBuilder来高效字符串连接</span></span><br><span class="line"><span class="comment">//创建字节缓冲</span></span><br><span class="line"><span class="keyword">var</span> stringBuilder strings.Builder</span><br><span class="line"></span><br><span class="line"><span class="comment">//把字符串写入缓冲</span></span><br><span class="line">stringBuilder.WriteString(str1)</span><br><span class="line">stringBuilder.WriteString(str2)</span><br><span class="line"></span><br><span class="line"><span class="comment">//将缓冲以字符串形式输出</span></span><br><span class="line">fmt.Println(stringBuilder.String())</span><br></pre></td></tr></table></figure>
+
+<h3 id="四、strings包相关函数"><a href="#四、strings包相关函数" class="headerlink" title="四、strings包相关函数"></a>四、strings包相关函数</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查找s在字符串str中的索引</span></span><br><span class="line">Index(str, s <span class="type">string</span>) <span class="type">int</span> </span><br><span class="line"></span><br><span class="line"><span class="comment">//判断str是否包含s</span></span><br><span class="line">Contains(str, s <span class="type">string</span>) <span class="type">bool</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//通过字符串str连接切片 s</span></span><br><span class="line">Join(s []<span class="type">string</span>, str <span class="type">string</span>) <span class="type">string</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//替换字符串str中old字符串为new字符串，n表示替换的次数，小于0全部替换</span></span><br><span class="line">Replace(str,old,<span class="built_in">new</span> <span class="type">string</span>,n <span class="type">int</span>) <span class="type">string</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//字符串str按照s分割，返回切片</span></span><br><span class="line">Split(str,s <span class="type">string</span>)[]<span class="type">string</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 去除头部、尾部指定的字符串</span></span><br><span class="line">Trim(s <span class="type">string</span>, cutset <span class="type">string</span>) <span class="type">string</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 去除空格，返回切片</span></span><br><span class="line">Fields(s <span class="type">string</span>) []<span class="type">string</span></span><br></pre></td></tr></table></figure>
+
+
       </div>
       
         <div class="prev-or-next">
           <div class="post-foot-next">
             
+              <a href="/2023/03/15/G03/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>上一页</span>
+              </a>
+            
           </div>
           <div class="post-attach">
             <span class="post-pubtime">
               <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
-              2023-03-14 21:32:12
+              2023-03-15 16:43:16
             </span>
             
                   <span class="post-tags">
                     <i class="iconfont icon-tags mr-10" title="标签"></i>
                     
                     <span class="span--tag mr-8">
-                      <a href="/tags/%E6%B5%8B%E8%AF%95/" title="测试">
-                        #测试
+                      <a href="/tags/Golang/" title="Golang">
+                        #Golang
                       </a>
                     </span>
                     
@@ -204,11 +233,6 @@
               
           </div>
           <div class="post-foot-prev">
-            
-              <a href="/2023/03/15/Go1/" target="_self">
-                <span>下一页</span>
-                <i class="iconfont icon-chevronright"></i>
-              </a>
             
           </div>
         </div>
@@ -222,7 +246,7 @@
     <div class="title">目录</div>
     <div class="catalog-content">
       
-        <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BF%99%E6%98%AF%E5%9C%A8%E6%B5%8B%E8%AF%95%E4%B8%80%E4%B8%8B"><span class="toc-text">这是在测试一下</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AD%97%E7%AC%A6"><span class="toc-text">一、字符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-text">二、字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C"><span class="toc-text">三、字符串操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-len-%E3%80%81string-%E5%87%BD%E6%95%B0"><span class="toc-text">3.1 len()、string()函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BF%9E%E6%8E%A5"><span class="toc-text">3.2 字符串连接</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E3%80%81strings%E5%8C%85%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0"><span class="toc-text">四、strings包相关函数</span></a></li></ol>
       
     </div>
   </div>

@@ -222,7 +222,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">指针    *</span><br><span class="line">切片    slice</span><br><span class="line">字典    map</span><br><span class="line">函数    func</span><br><span class="line">管道    chan</span><br><span class="line">接口    interface</span><br></pre></td></tr></table></figure>
 
 <p>tip：Go语言没有字符型，可以使用byte来保存单个字母</p>
-<h2 id="二-零值机制"><a href="#二-零值机制" class="headerlink" title="二 零值机制"></a>二 零值机制</h2><p>Go变量初始化会自带默认值，不像其他语言为空，下面列出各种数据类型对应的0值：</p>
+<h3 id="二-、零值机制"><a href="#二-、零值机制" class="headerlink" title="二 、零值机制"></a>二 、零值机制</h3><p>Go变量初始化会自带默认值，不像其他语言为空，下面列出各种数据类型对应的0值：</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span>     <span class="number">0</span></span><br><span class="line"><span class="type">int8</span>    <span class="number">0</span></span><br><span class="line"><span class="type">int32</span>   <span class="number">0</span></span><br><span class="line"><span class="type">int64</span>   <span class="number">0</span></span><br><span class="line"><span class="type">uint</span>    <span class="number">0x0</span></span><br><span class="line"><span class="type">rune</span>    <span class="number">0</span>           <span class="comment">//rune的实际类型是 int32</span></span><br><span class="line"><span class="type">byte</span>    <span class="number">0x0</span>         <span class="comment">// byte的实际类型是 uint8</span></span><br><span class="line"><span class="type">float32</span> <span class="number">0</span>           <span class="comment">//长度为 4 byte</span></span><br><span class="line"><span class="type">float64</span> <span class="number">0</span>           <span class="comment">//长度为 8 byte</span></span><br><span class="line"><span class="type">bool</span>    <span class="literal">false</span></span><br><span class="line"><span class="type">string</span>  <span class="string">&quot;&quot;</span></span><br></pre></td></tr></table></figure>
 
       </div>
@@ -268,7 +268,7 @@
     <div class="title">目录</div>
     <div class="catalog-content">
       
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%88%86%E7%B1%BB"><span class="toc-text">一、数据类型分类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E9%9B%B6%E5%80%BC%E6%9C%BA%E5%88%B6"><span class="toc-text">二 零值机制</span></a>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%88%86%E7%B1%BB"><span class="toc-text">一、数据类型分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E3%80%81%E9%9B%B6%E5%80%BC%E6%9C%BA%E5%88%B6"><span class="toc-text">二 、零值机制</span></a></li></ol>
       
     </div>
   </div>

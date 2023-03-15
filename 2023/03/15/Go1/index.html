@@ -11,7 +11,7 @@
   
   <title>
     
-      test 
+      Go入门日记-标识符与变量 
       
       
       |
@@ -157,19 +157,19 @@
   <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
   <div class="container post-details" id="post-details">
     <div class="post-content">
-      <div class="post-title">test</div>
+      <div class="post-title">Go入门日记-标识符与变量</div>
       <div class="post-attach">
         <span class="post-pubtime">
           <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
-          2023-03-14 21:32:12
+          2023-03-15 10:08:17
         </span>
         
               <span class="post-tags">
                 <i class="iconfont icon-tags mr-10" title="标签"></i>
                 
                 <span class="span--tag mr-8">
-                  <a href="/tags/%E6%B5%8B%E8%AF%95/" title="测试">
-                    #测试
+                  <a href="/tags/Golang/" title="Golang">
+                    #Golang
                   </a>
                 </span>
                 
@@ -177,25 +177,43 @@
           
       </div>
       <div class="markdown-body">
-        <h5 id="这是在测试一下"><a href="#这是在测试一下" class="headerlink" title="这是在测试一下"></a>这是在测试一下</h5>
+        <h2 id="一、标识符"><a href="#一、标识符" class="headerlink" title="一、标识符"></a>一、标识符</h2><h3 id="1-1关键字"><a href="#1-1关键字" class="headerlink" title="1.1关键字"></a>1.1关键字</h3><p>目前Go语言有25个关键字</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">break</span>        <span class="keyword">default</span>      <span class="function"><span class="keyword">func</span>         <span class="title">interface</span>    <span class="title">select</span></span></span><br><span class="line"><span class="keyword">case</span>         <span class="keyword">defer</span>        <span class="keyword">go</span>           <span class="keyword">map</span>          <span class="keyword">struct</span></span><br><span class="line"><span class="keyword">chan</span>         <span class="keyword">else</span>         <span class="keyword">goto</span>         <span class="keyword">package</span>      <span class="keyword">switch</span></span><br><span class="line"><span class="keyword">const</span>        <span class="keyword">fallthrough</span>  <span class="keyword">if</span>           <span class="keyword">range</span>        <span class="keyword">type</span></span><br><span class="line"><span class="keyword">continue</span>     <span class="keyword">for</span>          <span class="keyword">import</span>       <span class="keyword">return</span>       <span class="keyword">var</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2保留字"><a href="#1-2保留字" class="headerlink" title="1.2保留字"></a>1.2保留字</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">内建常量：  </span><br><span class="line">       <span class="literal">true</span>        <span class="literal">false</span>       <span class="literal">iota</span>        <span class="literal">nil</span></span><br><span class="line">内建类型：  </span><br><span class="line">       <span class="type">int</span>         <span class="type">int8</span>        <span class="type">int16</span>       <span class="type">int32</span>       <span class="type">int64</span></span><br><span class="line">       <span class="type">uint</span>        <span class="type">uint8</span>       <span class="type">uint16</span>      <span class="type">uint32</span>      <span class="type">uint64</span>      <span class="type">uintptr</span></span><br><span class="line">       <span class="type">float32</span>     <span class="type">float64</span> </span><br><span class="line">       <span class="type">complex128</span>  <span class="type">complex64</span></span><br><span class="line"><span class="type">bool</span>：      </span><br><span class="line">       <span class="type">byte</span>        <span class="type">rune</span>        <span class="type">string</span> 	    <span class="type">error</span></span><br><span class="line">内建函数：   </span><br><span class="line">       <span class="built_in">make</span>        <span class="built_in">delete</span>      <span class="built_in">complex</span>     <span class="built_in">panic</span>       <span class="built_in">append</span>      <span class="built_in">copy</span>    </span><br><span class="line">       <span class="built_in">close</span>       <span class="built_in">len</span>         <span class="built_in">cap</span>	    <span class="built_in">real</span>        <span class="built_in">imag</span>        <span class="built_in">new</span> </span><br><span class="line">       <span class="built_in">recover</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="二、变量"><a href="#二、变量" class="headerlink" title="二、变量"></a>二、变量</h2><h4 id="2-1变量声明"><a href="#2-1变量声明" class="headerlink" title="2.1变量声明"></a>2.1变量声明</h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a <span class="type">int</span>              <span class="comment">//初始化变量默认为0</span></span><br><span class="line"><span class="keyword">var</span> b = <span class="number">1</span>              <span class="comment">//声明并赋值，自动推导变量类型</span></span><br><span class="line">c := <span class="number">2</span>                 <span class="comment">//初始化，自动推导类型(只能在函数内部使用，var定义全局变量)</span></span><br><span class="line"><span class="comment">//Go语言中有定义未使用的变量编译会报错</span></span><br><span class="line"><span class="comment">//大小写变量为不同变量</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2多变量声明"><a href="#2-2多变量声明" class="headerlink" title="2.2多变量声明"></a>2.2多变量声明</h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> c,d <span class="type">int</span></span><br><span class="line"><span class="keyword">var</span> c1,d1 <span class="type">int</span> = <span class="number">1</span>,<span class="number">2</span></span><br><span class="line"><span class="keyword">var</span> c1,d1 = <span class="number">1</span>,<span class="number">2</span></span><br><span class="line">c,d := <span class="number">1</span>,<span class="number">2</span></span><br><span class="line"><span class="keyword">var</span>(</span><br><span class="line">    e <span class="type">int</span></span><br><span class="line">    f <span class="type">byte</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-3变量值互换"><a href="#2-3变量值互换" class="headerlink" title="2.3变量值互换"></a>2.3变量值互换</h4><p>在Go语言中两个变量互换的操作十分简单</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> (                <span class="comment">//定义初始化变量</span></span><br><span class="line">	m    <span class="type">int</span> = <span class="number">1</span></span><br><span class="line">	n    <span class="type">int</span> = <span class="number">2</span></span><br><span class="line">	temp <span class="type">int</span> = <span class="number">6</span></span><br><span class="line">)</span><br><span class="line">m,n = n,m           <span class="comment">//将m与n的变量值互换</span></span><br><span class="line">fmt.Println(m, n)   <span class="comment">//2 1</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-4-丢弃变量"><a href="#2-4-丢弃变量" class="headerlink" title="2.4_丢弃变量"></a>2.4_丢弃变量</h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//_丢弃变量任何赋予它的值都会被丢弃，该变量不占用命名空间</span></span><br><span class="line">_,d := <span class="number">1</span>,<span class="number">2</span>    <span class="comment">//此时d的值为2，1被丢弃掉</span></span><br></pre></td></tr></table></figure>
+
       </div>
       
         <div class="prev-or-next">
           <div class="post-foot-next">
             
+              <a href="/2023/03/14/test/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>上一页</span>
+              </a>
+            
           </div>
           <div class="post-attach">
             <span class="post-pubtime">
               <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
-              2023-03-14 21:32:12
+              2023-03-15 10:08:17
             </span>
             
                   <span class="post-tags">
                     <i class="iconfont icon-tags mr-10" title="标签"></i>
                     
                     <span class="span--tag mr-8">
-                      <a href="/tags/%E6%B5%8B%E8%AF%95/" title="测试">
-                        #测试
+                      <a href="/tags/Golang/" title="Golang">
+                        #Golang
                       </a>
                     </span>
                     
@@ -203,11 +221,6 @@
               
           </div>
           <div class="post-foot-prev">
-            
-              <a href="/2023/03/15/Go1/" target="_self">
-                <span>下一页</span>
-                <i class="iconfont icon-chevronright"></i>
-              </a>
             
           </div>
         </div>
@@ -221,7 +234,7 @@
     <div class="title">目录</div>
     <div class="catalog-content">
       
-        <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BF%99%E6%98%AF%E5%9C%A8%E6%B5%8B%E8%AF%95%E4%B8%80%E4%B8%8B"><span class="toc-text">这是在测试一下</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="toc-text">一、标识符</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-text">1.1关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2%E4%BF%9D%E7%95%99%E5%AD%97"><span class="toc-text">1.2保留字</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%8F%98%E9%87%8F"><span class="toc-text">二、变量</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E"><span class="toc-text">2.1变量声明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2%E5%A4%9A%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E"><span class="toc-text">2.2多变量声明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3%E5%8F%98%E9%87%8F%E5%80%BC%E4%BA%92%E6%8D%A2"><span class="toc-text">2.3变量值互换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-%E4%B8%A2%E5%BC%83%E5%8F%98%E9%87%8F"><span class="toc-text">2.4_丢弃变量</span></a></li></ol></li></ol></li></ol>
       
     </div>
   </div>

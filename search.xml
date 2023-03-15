@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Go入门日记-数据类型</title>
+      <link href="/2023/03/15/Go2/"/>
+      <url>/2023/03/15/Go2/</url>
+      
+        <content type="html"><![CDATA[<h3 id="一、数据类型分类"><a href="#一、数据类型分类" class="headerlink" title="一、数据类型分类"></a>一、数据类型分类</h3><p>Go 语言按类别有以下几种数据类型：布尔型、数字型、字符串型、派生型 </p><table><thead><tr><th align="center">整型</th><th align="center">int8、uint等</th><th align="center">数字型</th></tr></thead><tbody><tr><td align="center">浮点型</td><td align="center">float32、float64等</td><td align="center">数字型</td></tr><tr><td align="center">复数</td><td align="center"></td><td align="center">数字型</td></tr><tr><td align="center">布尔型</td><td align="center">bool</td><td align="center">布尔型</td></tr><tr><td align="center">字符串</td><td align="center">string</td><td align="center">字符串型</td></tr><tr><td align="center">数组</td><td align="center"></td><td align="center">派生型</td></tr><tr><td align="center">结构体</td><td align="center">struct</td><td align="center">派生型</td></tr></tbody></table><p>引用类型：即保存的是对程序中一个变量的或状态的间接引用，对其修改将影响所有该引用的拷贝</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">指针    *</span><br><span class="line">切片    slice</span><br><span class="line">字典    map</span><br><span class="line">函数    func</span><br><span class="line">管道    chan</span><br><span class="line">接口    interface</span><br></pre></td></tr></table></figure><p>tip：Go语言没有字符型，可以使用byte来保存单个字母</p><h2 id="二-零值机制"><a href="#二-零值机制" class="headerlink" title="二 零值机制"></a>二 零值机制</h2><p>Go变量初始化会自带默认值，不像其他语言为空，下面列出各种数据类型对应的0值：</p><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span>     <span class="number">0</span></span><br><span class="line"><span class="type">int8</span>    <span class="number">0</span></span><br><span class="line"><span class="type">int32</span>   <span class="number">0</span></span><br><span class="line"><span class="type">int64</span>   <span class="number">0</span></span><br><span class="line"><span class="type">uint</span>    <span class="number">0x0</span></span><br><span class="line"><span class="type">rune</span>    <span class="number">0</span>           <span class="comment">//rune的实际类型是 int32</span></span><br><span class="line"><span class="type">byte</span>    <span class="number">0x0</span>         <span class="comment">// byte的实际类型是 uint8</span></span><br><span class="line"><span class="type">float32</span> <span class="number">0</span>           <span class="comment">//长度为 4 byte</span></span><br><span class="line"><span class="type">float64</span> <span class="number">0</span>           <span class="comment">//长度为 8 byte</span></span><br><span class="line"><span class="type">bool</span>    <span class="literal">false</span></span><br><span class="line"><span class="type">string</span>  <span class="string">&quot;&quot;</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Golang </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Go入门日记-标识符与变量</title>
       <link href="/2023/03/15/Go1/"/>
       <url>/2023/03/15/Go1/</url>

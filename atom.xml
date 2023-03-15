@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>浔若的博客</title>
+  <icon>http://xunruo.github.io/icon.png</icon>
+  
+  <link href="http://xunruo.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://xunruo.github.io/"/>
+  <updated>2023-03-15T07:24:23.439Z</updated>
+  <id>http://xunruo.github.io/</id>
+  
+  <author>
+    <name>浔若</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Go入门日记-数据类型</title>
+    <link href="http://xunruo.github.io/2023/03/15/Go2/"/>
+    <id>http://xunruo.github.io/2023/03/15/Go2/</id>
+    <published>2023-03-15T07:07:17.000Z</published>
+    <updated>2023-03-15T07:24:23.439Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、数据类型分类&quot;&gt;&lt;a href=&quot;#一、数据类型分类&quot; class=&quot;headerlink&quot; title=&quot;一、数据类型分类&quot;&gt;&lt;/a&gt;一、数据类型分类&lt;/h3&gt;&lt;p&gt;Go 语言按类别有以下几种数据类型：布尔型、数字型、字符串型、派生型</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Golang" scheme="http://xunruo.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go入门日记-标识符与变量</title>
+    <link href="http://xunruo.github.io/2023/03/15/Go1/"/>
+    <id>http://xunruo.github.io/2023/03/15/Go1/</id>
+    <published>2023-03-15T02:08:17.000Z</published>
+    <updated>2023-03-15T02:50:31.268Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、标识符&quot;&gt;&lt;a href=&quot;#一、标识符&quot; class=&quot;headerlink&quot; title=&quot;一、标识符&quot;&gt;&lt;/a&gt;一、标识符&lt;/h2&gt;&lt;h3 id=&quot;1-1关键字&quot;&gt;&lt;a href=&quot;#1-1关键字&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Golang" scheme="http://xunruo.github.io/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://xunruo.github.io/2023/03/14/test/"/>
+    <id>http://xunruo.github.io/2023/03/14/test/</id>
+    <published>2023-03-14T13:32:12.000Z</published>
+    <updated>2023-03-14T13:33:38.286Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h5 id=&quot;这是在测试一下&quot;&gt;&lt;a href=&quot;#这是在测试一下&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="测试" scheme="http://xunruo.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+</feed>

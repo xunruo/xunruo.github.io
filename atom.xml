@@ -6,7 +6,7 @@
   <link href="http://xunruo.github.io/atom.xml" rel="self"/>
   
   <link href="http://xunruo.github.io/"/>
-  <updated>2023-03-15T07:27:52.189Z</updated>
+  <updated>2023-03-15T08:29:53.184Z</updated>
   <id>http://xunruo.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Go入门日记-流程控制</title>
+    <link href="http://xunruo.github.io/2023/03/15/G03/"/>
+    <id>http://xunruo.github.io/2023/03/15/G03/</id>
+    <published>2023-03-15T08:12:25.000Z</published>
+    <updated>2023-03-15T08:29:53.184Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、条件语句&quot;&gt;&lt;a href=&quot;#一、条件语句&quot; class=&quot;headerlink&quot; title=&quot;一、条件语句&quot;&gt;&lt;/a&gt;一、条件语句&lt;/h3&gt;&lt;h4 id=&quot;1-1-if判断语句：&quot;&gt;&lt;a href=&quot;#1-1-if判断语句：&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Golang" scheme="http://xunruo.github.io/tags/Golang/"/>
+    
+  </entry>
   
   <entry>
     <title>Go入门日记-数据类型</title>

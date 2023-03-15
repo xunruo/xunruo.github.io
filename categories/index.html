@@ -16,7 +16,7 @@
       
       |
     
-     Xunruo
+     浔若的博客
   </title>
 
   
@@ -195,6 +195,29 @@
 
 
 
+
+
+  <div id="gitalk-container"></div>
+
+  <script>
+    function loadGitalkSuc() {
+      const gitalk = new Gitalk({
+        clientID: 'ebec2f36dac98f5830f4',
+        clientSecret: '702a573aabf40152d47cfb20ab2fb572705a1782',
+        repo: 'xunruo.github.io',
+        owner: 'xunruo',
+        admin: ['xunruo'],
+        id: location.pathname,
+        distractionFreeMode: false
+      })
+
+      gitalk.render('gitalk-container')
+    }
+  </script>
+  
+    <link rel="stylesheet" href="/plugins/gitalk.css">
+    <script type="text/javascript" src="/plugins/gitalk.min.js" onload="loadGitalkSuc(this)"></script>
+  
 
 
 

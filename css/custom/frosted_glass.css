@@ -47,8 +47,8 @@
 }
 
 #aside-content #card-toc .toc-content .toc-link.active {
-    background: rgba(255,184,184,.4);
-    font-size: 120%
+    background: rgba(73,177,245,0.7);
+    font-size: 110%
 }
 
 #aside-content #card-toc .toc-percentage {

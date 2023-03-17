@@ -6,13 +6,14 @@
 
 #recent-posts>.recent-post-item,.layout>div:first-child:not(.recent-posts),.layout_post>#page,.layout_post>#post,.read-mode .layout_post>#post {
     background: rgba(255,255,255,.4);
+    /* background: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0)); */
     -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(90%) blur(20px);
 }
 
-#aside-content>.card-widget,.sticky_layout>.card-widget {
+/* #aside-content>.card-widget,.sticky_layout>.card-widget {
     background: rgba(255,255,255,.4)!important
-}
+} */
 
 #footer {
     background: 0 0
@@ -23,13 +24,14 @@
 }
 
 #aside-content .card-widget.card-info {
-    background: rgba(255,255,255,.4);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px)
 }
 
 #aside-content .card-widget {
-    background: rgba(255,255,255,.4);
+    /* background: rgba(255,255,255,.4); */
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px)
 }

@@ -33,7 +33,7 @@ svg.icon {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ffb8b8;
+  background-color: #49b1f5;
   background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
   border-radius: 3em
 }
@@ -146,6 +146,7 @@ figure.highlight pre .addition {
 }
 
 #aside-content .card-widget.card-info {
+  /* background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),  url(/img/222.png)!important; */
   background-repeat: no-repeat!important;
   background-attachment: inherit!important;
   background-size: 100%!important
@@ -283,7 +284,8 @@ figure.highlight pre .addition {
 }
 
 #pagination .pagination .current {
-  background: rgba(255,184,184,.6)!important;
+  /* background: rgba(255,184,184,.6)!important; */
+  background: rgba(255,255,255,.4)!important;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px)!important;
   border-radius: 8px
@@ -541,4 +543,9 @@ figure.highlight pre .addition {
   width: fit-content!important;
   left: 50%!important;
   transform: translateX(-50%)!important;
+}
+
+/* 最新文章 */
+#aside-content .aside-list > .aside-list-item:not(:last-child) {
+  border-bottom: 1px dashed #f5f5f538;
 }

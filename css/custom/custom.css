@@ -457,3 +457,7 @@ figure.highlight pre .addition {
   height: 40px;
   vertical-align: middle;
 }
+.wl-panel{
+  background: rgb(255 255 255 / 66%);
+  border-radius: 0.3em;
+}

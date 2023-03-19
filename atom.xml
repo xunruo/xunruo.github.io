@@ -6,7 +6,7 @@
   <link href="https://xunruo.top/atom.xml" rel="self"/>
   
   <link href="https://xunruo.top/"/>
-  <updated>2023-03-19T03:28:39.287Z</updated>
+  <updated>2023-03-19T07:33:20.900Z</updated>
   <id>https://xunruo.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://xunruo.top/posts/ad0f0f0b.html"/>
     <id>https://xunruo.top/posts/ad0f0f0b.html</id>
     <published>2023-03-15T16:43:16.000Z</published>
-    <updated>2023-03-19T03:28:39.287Z</updated>
+    <updated>2023-03-19T07:33:20.900Z</updated>
     
     
       
@@ -37,6 +37,8 @@
     
     <category term="Golang" scheme="https://xunruo.top/tags/Golang/"/>
     
+    <category term="编程" scheme="https://xunruo.top/tags/%E7%BC%96%E7%A8%8B/"/>
+    
   </entry>
   
   <entry>
@@ -44,7 +46,7 @@
     <link href="https://xunruo.top/posts/fd173a46.html"/>
     <id>https://xunruo.top/posts/fd173a46.html</id>
     <published>2023-03-15T16:12:25.000Z</published>
-    <updated>2023-03-19T03:28:39.287Z</updated>
+    <updated>2023-03-19T07:33:20.900Z</updated>
     
     
       
@@ -60,6 +62,8 @@
     
     <category term="Golang" scheme="https://xunruo.top/tags/Golang/"/>
     
+    <category term="编程" scheme="https://xunruo.top/tags/%E7%BC%96%E7%A8%8B/"/>
+    
   </entry>
   
   <entry>
@@ -67,14 +71,15 @@
     <link href="https://xunruo.top/posts/71c0dfce.html"/>
     <id>https://xunruo.top/posts/71c0dfce.html</id>
     <published>2023-03-15T15:07:17.000Z</published>
-    <updated>2023-03-19T03:28:39.287Z</updated>
+    <updated>2023-03-19T07:33:20.900Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;一、数据类型分类&quot;&gt;&lt;a href=&quot;#一、数据类型分类&quot; class=&quot;headerlink&quot; title=&quot;一、数据类型分类&quot;&gt;&lt;/a&gt;一、数据类型分类&lt;/h3&gt;&lt;p&gt;Go 语言按类别有以下几种数据类型：布尔型、数字型、字符串型、派生型</summary>
+    <summary type="html">&lt;h3 id=&quot;一、数据类型分类&quot;&gt;&lt;a href=&quot;#一、数据类型分类&quot; class=&quot;headerlink&quot; title=&quot;一、数据类型分类&quot;&gt;&lt;/a&gt;一、数据类型分类&lt;/h3&gt;&lt;p&gt;Go 语言按类别有以下几种数据类型：布尔型、数字型、字符串型、派生型 &lt;/p&gt;
+&lt;div</summary>
         
       
     
@@ -83,6 +88,8 @@
     
     <category term="Golang" scheme="https://xunruo.top/tags/Golang/"/>
     
+    <category term="编程" scheme="https://xunruo.top/tags/%E7%BC%96%E7%A8%8B/"/>
+    
   </entry>
   
   <entry>
@@ -90,7 +97,7 @@
     <link href="https://xunruo.top/posts/3417d001.html"/>
     <id>https://xunruo.top/posts/3417d001.html</id>
     <published>2023-03-15T10:08:17.000Z</published>
-    <updated>2023-03-19T03:28:39.287Z</updated>
+    <updated>2023-03-19T07:33:20.900Z</updated>
     
     
       
@@ -105,6 +112,8 @@
     
     
     <category term="Golang" scheme="https://xunruo.top/tags/Golang/"/>
+    
+    <category term="编程" scheme="https://xunruo.top/tags/%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   

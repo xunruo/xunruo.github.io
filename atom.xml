@@ -6,7 +6,7 @@
   <link href="https://xunruo.top/atom.xml" rel="self"/>
   
   <link href="https://xunruo.top/"/>
-  <updated>2023-03-20T13:56:39.461Z</updated>
+  <updated>2023-03-21T14:54:40.130Z</updated>
   <id>https://xunruo.top/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Go入门日记-数组</title>
+    <link href="https://xunruo.top/posts/5ded7b78.html"/>
+    <id>https://xunruo.top/posts/5ded7b78.html</id>
+    <published>2023-03-21T15:32:55.000Z</published>
+    <updated>2023-03-21T14:54:40.130Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一-、数组&quot;&gt;&lt;a href=&quot;#一-、数组&quot; class=&quot;headerlink&quot; title=&quot;一 、数组&quot;&gt;&lt;/a&gt;一 、数组&lt;/h3&gt;&lt;h4 id=&quot;1-1-数组的声明&quot;&gt;&lt;a href=&quot;#1-1-数组的声明&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Golang" scheme="https://xunruo.top/tags/Golang/"/>
+    
+    <category term="编程" scheme="https://xunruo.top/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Go入门日记-字符串</title>
     <link href="https://xunruo.top/posts/ad0f0f0b.html"/>
     <id>https://xunruo.top/posts/ad0f0f0b.html</id>
     <published>2023-03-15T16:43:16.000Z</published>
-    <updated>2023-03-20T13:56:39.461Z</updated>
+    <updated>2023-03-21T14:54:40.130Z</updated>
     
     
       
@@ -46,7 +71,7 @@
     <link href="https://xunruo.top/posts/fd173a46.html"/>
     <id>https://xunruo.top/posts/fd173a46.html</id>
     <published>2023-03-15T16:12:25.000Z</published>
-    <updated>2023-03-20T13:56:39.461Z</updated>
+    <updated>2023-03-21T14:54:40.130Z</updated>
     
     
       
@@ -71,7 +96,7 @@
     <link href="https://xunruo.top/posts/71c0dfce.html"/>
     <id>https://xunruo.top/posts/71c0dfce.html</id>
     <published>2023-03-15T15:07:17.000Z</published>
-    <updated>2023-03-20T13:56:39.461Z</updated>
+    <updated>2023-03-21T14:54:40.130Z</updated>
     
     
       
@@ -85,6 +110,8 @@
     
     
     
+    <category term="娱乐" scheme="https://xunruo.top/categories/%E5%A8%B1%E4%B9%90/"/>
+    
     
     <category term="Golang" scheme="https://xunruo.top/tags/Golang/"/>
     
@@ -97,7 +124,7 @@
     <link href="https://xunruo.top/posts/3417d001.html"/>
     <id>https://xunruo.top/posts/3417d001.html</id>
     <published>2023-03-15T10:08:17.000Z</published>
-    <updated>2023-03-20T13:56:39.461Z</updated>
+    <updated>2023-03-21T14:54:40.130Z</updated>
     
     
       
@@ -109,6 +136,8 @@
       
     
     
+    
+    <category term="编程" scheme="https://xunruo.top/categories/%E7%BC%96%E7%A8%8B/"/>
     
     
     <category term="Golang" scheme="https://xunruo.top/tags/Golang/"/>

@@ -1,0 +1,23 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>draft - 标签 - 浔若-学习日记</title>
+    <link>https://xunruo.top/tags/draft/</link>
+    <description>draft - 标签 - 浔若-学习日记</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 25 Mar 2023 10:50:32 &#43;0800</lastBuildDate><atom:link href="https://xunruo.top/tags/draft/" rel="self" type="application/rss+xml" /><item>
+  <title>Three_post</title>
+  <link>https://xunruo.top/post/efae2585/</link>
+  <pubDate>Sat, 25 Mar 2023 10:50:32 &#43;0800</pubDate>
+  <author>map[avatar:&lt;nil&gt; email:&lt;nil&gt; link:&lt;nil&gt; name:&lt;nil&gt;]</author>
+  <guid>https://xunruo.top/post/efae2585/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Two_post</title>
+  <link>https://xunruo.top/post/two_post/</link>
+  <pubDate>Sat, 25 Mar 2023 10:48:01 &#43;0800</pubDate>
+  <author>map[avatar:&lt;nil&gt; email:&lt;nil&gt; link:&lt;nil&gt; name:&lt;nil&gt;]</author>
+  <guid>https://xunruo.top/post/two_post/</guid>
+  <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

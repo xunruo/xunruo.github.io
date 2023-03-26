@@ -17,16 +17,16 @@ Go1：语言标识符与变量
 ### 1.2保留字
 
 ```go
- 内建常量：  
+ //内建常量：  
         true        false       iota        nil
- 内建类型：  
+ //内建类型：  
         int         int8        int16       int32       int64
         uint        uint8       uint16      uint32      uint64      uintptr
         float32     float64 
         complex128  complex64
- bool：      
+ //bool：      
         byte        rune        string 	    error
- 内建函数：   
+ //内建函数：   
         make        delete      complex     panic       append      copy    
         close       len         cap	   real        imag        new 
         recover

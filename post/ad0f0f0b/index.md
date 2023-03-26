@@ -192,8 +192,8 @@ if err != nil {
     fmt.Printf("type:%T value:%#v\n", num2, num2)
 }
 //输出 
-type:int value:110
-s100 转换失败！
+//type:int value:110
+//s100 转换失败！
 ```
 
 ```go
@@ -210,12 +210,12 @@ if err != nil {
 //输出 true
 
 //ParseInt返回字符串表示的整数值(包括正负号)
-参数1: s string 数字的字符串形式
-参数2: base int 取值(2-36) 
-Tips: 如果base为0，根据字符串前置判断，“0x”是16进制，“0”是8进制，否则是10进制
-参数3: bitSize int 指定结果必须能无溢出赋值的整数类型，0、8、16、32、64 分别代表
-int、int8、int16、int32、int64,限制转化生成int类型的位数,但是返回结果都是int64
-可参考链接: https://studygolang.com/topics/12335
+//参数1: s string 数字的字符串形式
+//参数2: base int 取值(2-36) 
+//Tips: 如果base为0，根据字符串前置判断，“0x”是16进制，“0”是8进制，否则是10进制
+//参数3: bitSize int 指定结果必须能无溢出赋值的整数类型，0、8、16、32、64 分别代表
+//int、int8、int16、int32、int64,限制转化生成int类型的位数,但是返回结果都是int64
+//可参考链接: https://studygolang.com/topics/12335
 str := "-11"
 num, err := strconv.ParseInt(str, 10, 0)
 if err != nil {
@@ -255,13 +255,13 @@ fmt.Printf("type:%T,value:%v\n ", str, str)
 //不再举例
 
 //FormatFloat函数用于将浮点数转换为字符串类型
-参数1: bitSize 参数f的来源类型（32表示float32、64表示float64）会据此进行舍入
-参数2: fmt 表示格式，可以设置为“f”表示 -ddd.dddd、“b”表示 -ddddp±ddd，指数为二进制、
-“e”表示 -d.dddde±dd 十进制指数、“E”表示 -d.ddddE±dd 十进制指数、“g”表示指数很大时用“e”格式，
-否则“f”格式、“G”表示指数很大时用“E”格式，否则“f”格式。
-参数3: prec 控制精度（排除指数部分）：当参数 fmt 为“f”、“e”、“E”时，它表示小数点后的数字个数
-当参数 fmt 为“g”、“G”时，它控制总的数字个数。
-如果 prec 为 -1，则代表使用最少数量的、但又必需的数字来表示 f。
+//参数1: bitSize 参数f的来源类型（32表示float32、64表示float64）会据此进行舍入
+//参数2: fmt 表示格式，可以设置为“f”表示 -ddd.dddd、“b”表示 -ddddp±ddd，指数为二进制、
+//“e”表示 -d.dddde±dd 十进制指数、“E”表示 -d.ddddE±dd 十进制指数、“g”表示指数很大时用“e”格式，
+//否则“f”格式、“G”表示指数很大时用“E”格式，否则“f”格式。
+//参数3: prec 控制精度（排除指数部分）：当参数 fmt 为“f”、“e”、“E”时，它表示小数点后的数字个数
+//当参数 fmt 为“g”、“G”时，它控制总的数字个数。
+//如果 prec 为 -1，则代表使用最少数量的、但又必需的数字来表示 f。
 var num float64 = 3.1415926
 str := strconv.FormatFloat(num, 'E', -1, 64)
 fmt.Printf("type:%T,value:%v\n ", str, str)

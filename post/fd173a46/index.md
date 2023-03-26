@@ -85,7 +85,7 @@ key:3  value:4
 
 - `goto`可以退出多层循环
 
-- ```go
+- ```txt
   goto 标签 
   
   标签：

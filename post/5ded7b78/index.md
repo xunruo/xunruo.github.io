@@ -67,7 +67,7 @@ for key, value := range arr {
 
 #### 1.4 多维数组
 
-```
+```go
 //创建多维数组
 var arr[2][2]int
 arr1 := [][]int{}

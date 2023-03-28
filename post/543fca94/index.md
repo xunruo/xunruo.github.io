@@ -15,7 +15,7 @@ Nmap默认发送ARP的ping数据包，检测常用端口开放
 nmap 192.168.244.160
 ```
 
-<img src="http://npm.elemecdn.com/xrhugo@1.0.5/public/img/image-20230327214404178.png" alt="image-20230327214404178" style="zoom:80%;" description="nihao" />
+<img src="https://npm.elemecdn.com/xrhugo@1.0.5/public/img/image-20230327214404178.png" alt="image-20230327214404178" style="zoom:80%;" description="nihao" />
 
 快速扫描多个IP地址目标
 
@@ -23,7 +23,7 @@ nmap 192.168.244.160
 nmap 192.168.244.160 192.168.244.1
 ```
 
-<img src="http://npm.elemecdn.com/xrhugo@1.0.5/public/img/image-20230327214600527.png" alt="image-20230327214600527" style="zoom:80%;" />
+<img src="https://npm.elemecdn.com/xrhugo@1.0.5/public/img/image-20230327214600527.png" alt="image-20230327214600527" style="zoom:80%;" />
 
 简单扫描，并对返回的结果详细描述输出
 
@@ -31,7 +31,7 @@ nmap 192.168.244.160 192.168.244.1
 nmap -vv 192.168.244.160
 ```
 
-<img src="http://npm.elemecdn.com/xrhugo@1.0.5/public/img/image-20230327215224914.png" alt="image-20230327215224914" style="zoom:80%;" />
+<img src="https://npm.elemecdn.com/xrhugo@1.0.5/public/img/image-20230327215224914.png" alt="image-20230327215224914" style="zoom:80%;" />
 
 指定端口和范围扫描
 
@@ -42,7 +42,7 @@ nmap -p 端口范围 目标主机IP
 nmap -p 80-443 192.168.244.160
 ```
 
-<img src="http://npm.elemecdn.com/xrhugo@1.0.5/public/img/image-20230327215626646.png" alt="image-20230327215626646" style="zoom:80%;" />
+<img src="https://npm.elemecdn.com/xrhugo@1.0.5/public/img/image-20230327215626646.png" alt="image-20230327215626646" style="zoom:80%;" />
 
 ### 网段扫描格式
 
@@ -90,7 +90,7 @@ ping扫描：类似与windows/linux中ping扫描方式，常使用该命令去�
 nmap -sP 192.168.244.1-255/nmap -sP 192.168.244.1/24
 ```
 
-<img src="http://npm.elemecdn.com/xrhugo@1.0.5/public/img/image-20230327220442785.png" alt="image-20230327220442785" style="zoom:80%;" />
+<img src="https://npm.elemecdn.com/xrhugo@1.0.5/public/img/image-20230327220442785.png" alt="image-20230327220442785" style="zoom:80%;" />
 
 ### -sS 
 
@@ -104,7 +104,7 @@ SYN扫描,又称为半开放扫描，它不打开一个完全的TCP连接，执�
 缺点：需要root权限
 ```
 
-<img src="http://npm.elemecdn.com/xrhugo@1.0.5/public/img/image-20230327220915658.png" alt="image-20230327220915658" style="zoom:80%;" />
+<img src="https://npm.elemecdn.com/xrhugo@1.0.5/public/img/image-20230327220915658.png" alt="image-20230327220915658" style="zoom:80%;" />
 
 ### -sT 
 
@@ -240,7 +240,7 @@ nmap -A 192.168.244.160
 nmap -vv -p 1-100,3306,3389 -O -traceroute 192.168.244.160
 ```
 
-<img src="http://npm.elemecdn.com/xrhugo@1.0.5/public/img/image-20230328135045026.png" alt="image-20230328135045026" style="zoom: 50%;" />
+<img src="https://npm.elemecdn.com/xrhugo@1.0.5/public/img/image-20230328135045026.png" alt="image-20230328135045026" style="zoom: 50%;" />
 
 Nmap输出格式
 
@@ -307,7 +307,7 @@ PORT   STATE SERVICE
 
 3、对mysql进行暴力破解
 
-<img src="http://npm.elemecdn.com/xrhugo@1.0.6/public/img/image-20230328142953127-1679988225064-1.png" alt="image-20230328142953127" style="zoom: 67%;" />
+<img src="https://npm.elemecdn.com/xrhugo@1.0.6/public/img/image-20230328142953127-1679988225064-1.png" alt="image-20230328142953127" style="zoom: 67%;" />
 
 ## 参数速查
 

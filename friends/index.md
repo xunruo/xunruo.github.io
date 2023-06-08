@@ -6,10 +6,10 @@
 {{< admonition tip "添加友链，评论格式如下：" >}}
 
 ```yml
-- nickname: <your nickname>
-  avatar: <your avatar>
-  url: <your site link>
-  description: <description of your site>
+- nickname: 博客名
+  avatar: 头像url
+  url: 网站url
+  description: 博客网站描述
 ```
 
 {{< /admonition >}}

@@ -66,13 +66,13 @@ wireshark捕获数据包，只查看http数据包，流量包如下图，我们�
 
 **3、shell传参进行命令执行**
 
-![image-20230721122306611](https://s1.vika.cn/space/2023/07/21/1e6e7862445546db9d18b5bbca1b9f42)
+<img src="https://s1.vika.cn/space/2023/07/21/1e6e7862445546db9d18b5bbca1b9f42" alt="image-20230721122306611"  />
 
 使用变量cmd传入whoami命令，返回内容
 
 **4、删除shell**
 
-![image-20230721122546132](https://s1.vika.cn/space/2023/07/21/af684bc0cc244281911bcf60a200827a)
+<img src="https://s1.vika.cn/space/2023/07/21/af684bc0cc244281911bcf60a200827a" alt="image-20230721122546132"  />
 
 删除tmpuyvln.php文件，接着删除它自身，这里可以注意到马的命名规则，tmpuxxxx.php,tmpbxxxx.php
 

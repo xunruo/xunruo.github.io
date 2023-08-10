@@ -6,10 +6,10 @@
 {{< admonition tip "添加友链，评论格式如下：" >}}
 
 ```yml
-- nickname: 博客名
-  avatar: 头像url
-  url: 网站url
-  description: 博客网站描述
+- 博客名: 浔若
+  头像url: https://npm.elemecdn.com/xunruo@0.0.0/themes/butterfly/source/img/avatar.png
+  url: https://www.xunruo.top
+  网站描述: 网安学习笔记
 ```
 
 {{< /admonition >}}

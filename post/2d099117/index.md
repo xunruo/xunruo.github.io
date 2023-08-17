@@ -133,11 +133,11 @@ Remove-DomainObjectAcl -TargetIdentity "DC=xr,DC=com" -PrincipalIdentity liu -Ri
 - Powershell v3.0
 - 域内普通用户权限
 
-![image-20230817232541260](https://s1.vika.cn/space/2023/08/17/78e80b418811489f92fda29885b4a118)
+<img src="https://s1.vika.cn/space/2023/08/17/78e80b418811489f92fda29885b4a118" alt="image-20230817232541260" style="zoom:;" />
 
 要求Powershell v3.0，增加一台win10来执行Execute-ACLight2.bat,登录域内普通用户ls
 
-![image-20230817234713769](https://s1.vika.cn/space/2023/08/17/b29b783c8641417fb1d0a6c75bf9c82d)
+<img src="https://s1.vika.cn/space/2023/08/17/b29b783c8641417fb1d0a6c75bf9c82d" alt="image-20230817234713769" style="zoom:;" />
 
 生成result文件夹查看结果，排查到liu用户为Shadow Admin
 

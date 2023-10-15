@@ -7,7 +7,7 @@
 
 ```yml
 - 博客名: 浔若
-  头像url: https://npm.elemecdn.com/xunruo@0.0.0/themes/butterfly/source/img/avatar.png
+  头像url: https://s1.vika.cn/space/2023/10/15/589bf00dee11484191488d69a5bf21bd
   url: https://www.xunruo.top
   网站描述: 网安学习笔记
 ```

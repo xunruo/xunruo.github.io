@@ -59,6 +59,8 @@ lsadump::dcsync /domain:xr.com /user:administrator /csv
 
 通过Invoke-ReflectivePEinjection调用mimikatz.dll中的dcsync功能
 
+{{< link "https://gist.github.com/monoxgas/9d238accd969550136db" "Invoke-DCSync.ps1" "" true >}}
+
 导出域内所有用户的hash：
 
 ```shell
@@ -96,6 +98,8 @@ Invoke-DCSync -DumpForest -Users @("administrator") | ft -wrap -autosize
 
 **利用方法：**
 
+{{< link "https://github.com/PowerShellMafia/PowerSploit/blob/dev/Recon/PowerView.ps1#L8270" "PowerView.ps1" "" true >}}
+
 添加ACE的命令：
 
 ```shell
@@ -129,6 +133,8 @@ Remove-DomainObjectAcl -TargetIdentity "DC=xr,DC=com" -PrincipalIdentity liu -Ri
 枚举Active Directory中所有用户的ACL，标记出特权帐户
 
 **利用条件：**
+
+{{< link "https://github.com/cyberark/ACLight" "ACLight" "" true >}}
 
 - Powershell v3.0
 - 域内普通用户权限
